@@ -1,4 +1,4 @@
-/* funkcje sortowania, zamiany oraz kopiowania tablic
+/* funkcje sortowania, zamiany
 */
 
 void zamiana(int & a, int & b){

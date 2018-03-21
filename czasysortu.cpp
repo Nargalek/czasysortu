@@ -9,7 +9,7 @@ sortowania nale¿y wyœwietliæ (w postaci tekstowej) na ekranie.
 Wybrane sposoby sortowania:
 1)Bubble Sort
 2)Quick Sort
-3) Selection Sort
+3)Selection Sort
 
 Wykonal Jakub Gadecki
  */
