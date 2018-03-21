@@ -23,7 +23,6 @@ Wykonal Jakub Gadecki
 using namespace std;
 const int roz=10000;
 int array[roz], bubble[roz], quick[roz], sele[roz];
-int z,i,j;
 
 int main(int argc, char** argv) {
 	
@@ -37,21 +36,21 @@ int main(int argc, char** argv) {
 	copy(array, array+roz, quick);
 	copy(array, array+roz, sele);
 
-
 	clock_t start = clock();
 
 	bubblesort(bubble, roz);
-	cout<<"\nczas : "<<(((double)clock() - start) / CLOCKS_PER_SEC)<<"sec.";
+	cout<<"\nczas : "<<(((double)clock() - start) / (CLOCKS_PER_SEC/1000))<<"milisec.";
 	
 	cout<<"\nkoniec sortowania!\n";
 	//quick sort
 	start = clock();
 	quicksort(quick,0,roz-1);
-	cout<<"\nczas : "<<(((double)clock() - start)/ CLOCKS_PER_SEC)<<"sec.";
+	cout<<"\nczas : "<<(((double)clock() - start)/ (CLOCKS_PER_SEC/1000))<<"milisec.";
 	cout<<"\nkoniec sortowania!\n";
+
 	start = clock();
 	selectionsort(sele, roz);
-	cout<<"\nczas : "<<(((double)clock() - start)/ CLOCKS_PER_SEC)<<"sec.";
+	cout<<"\nczas : "<<(((double)clock() - start)/ (CLOCKS_PER_SEC/1000))<<"milisec.";
 	cout<<"\nkoniec sortowania!\n";
 	
 /*	

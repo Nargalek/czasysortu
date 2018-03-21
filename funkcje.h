@@ -8,13 +8,7 @@ void zamiana(int & a, int & b){
 		
 	
 }
-int klon(int ar[],int ark[], int a){
-	
-	for(int i; i<a;i++){
-		ark[i] = ar[i];
-	}
-	
-}
+
 int bubblesort(int ar[], int a){
 		for(int i;i<a;i++){
 			for(int i=0;i<a;i++){
