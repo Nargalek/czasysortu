@@ -1,4 +1,4 @@
-/* funkcje sortowania, zamiany
+/* funkcje sortowania, zamiany, wypelnienia tablic
 */
 
 void zamiana(int & a, int & b){
@@ -7,6 +7,13 @@ void zamiana(int & a, int & b){
 	b = z;
 		
 	
+}
+
+void wypelnij(int ar[], int a){
+	srand(time(NULL));
+	for(int i;i<a;i++){
+		ar[i]=rand() % a;
+	}
 }
 
 int bubblesort(int ar[], int a){

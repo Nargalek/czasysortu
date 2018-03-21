@@ -21,27 +21,22 @@ Wykonal Jakub Gadecki
 #include "funkcje.h"
 
 using namespace std;
-const int roz=10000;
+const int roz=50000;
 int array[roz], bubble[roz], quick[roz], sele[roz];
 
 int main(int argc, char** argv) {
 	
+	wypelnij(array, roz);
 
-	srand(time(NULL));
-	for(int i;i<roz;i++){
-		array[i]=rand() % roz;
-	//	cout<<array[i]<<"\n";
-	}
 	copy(array, array+roz, bubble);
 	copy(array, array+roz, quick);
 	copy(array, array+roz, sele);
 
 	clock_t start = clock();
-
 	bubblesort(bubble, roz);
 	cout<<"\nczas : "<<(((double)clock() - start) / (CLOCKS_PER_SEC/1000))<<"milisec.";
-	
 	cout<<"\nkoniec sortowania!\n";
+
 	//quick sort
 	start = clock();
 	quicksort(quick,0,roz-1);
